@@ -62,10 +62,7 @@ export async function generateFakeAutoShopsAndReviews() {
         0
       ),
       price: randomNumberBetween(1, 4),
-      photo: `https://storage.googleapis.com/firestorequickstarts.appspot.com/food_${randomNumberBetween(
-        1,
-        22
-      )}.png`,
+      photo: '/images {randomNumberBetween(1,13)}.jpg',
       timestamp: autoShopTimestamp,
     };
 
