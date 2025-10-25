@@ -62,7 +62,7 @@ export async function generateFakeAutoShopsAndReviews() {
         0
       ),
       price: randomNumberBetween(1, 4),
-      photo: '/images {randomNumberBetween(1,13)}.jpg',
+      photo: '/images/ {randomNumberBetween(1,13)}.jpg', // Photos from pexels.com
       timestamp: autoShopTimestamp,
     };
 
