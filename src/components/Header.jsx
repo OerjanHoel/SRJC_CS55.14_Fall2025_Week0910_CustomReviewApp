@@ -70,7 +70,7 @@ export default function Header({ initialUser }) {
 
                 <li>
                   <a href="#" onClick={addFakeAutoShopsAndReviews}>
-                    Add sample restaurants
+                    Add sample auto shops
                   </a>
                 </li>
 
