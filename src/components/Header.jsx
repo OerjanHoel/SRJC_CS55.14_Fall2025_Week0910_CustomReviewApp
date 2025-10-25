@@ -7,7 +7,7 @@ import {
   signOut,
   onIdTokenChanged,
 } from "@/src/lib/firebase/auth.js";
-import { addFakeRestaurantsAndReviews } from "@/src/lib/firebase/firestore.js"; // Import of filler from firestore.js
+import { addFakeAutoShopsAndReviews } from "@/src/lib/firebase/firestore.js"; // Import of filler from firestore.js
 import { setCookie, deleteCookie } from "cookies-next"; // Import of Cookie functions from cookies-next
 
 // Initiate the Cookies for the user authentication
@@ -69,7 +69,7 @@ export default function Header({ initialUser }) {
                 <li>{user.displayName}</li>
 
                 <li>
-                  <a href="#" onClick={addFakeRestaurantsAndReviews}>
+                  <a href="#" onClick={addFakeAutoShopsAndReviews}>
                     Add sample restaurants
                   </a>
                 </li>
