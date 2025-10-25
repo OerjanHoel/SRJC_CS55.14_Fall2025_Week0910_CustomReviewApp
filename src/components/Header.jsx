@@ -48,8 +48,8 @@ export default function Header({ initialUser }) {
   return (
     <header>
       <Link href="/" className="logo">
-        <img src="/friendly-eats.svg" alt="FriendlyEats" />
-        Friendly Eats
+        <img src="/autoshop-reviews.png" alt="AutoShop Reviews" />
+        AutoShop Reviews
       </Link>
       {user ? (
         <>

@@ -73,7 +73,7 @@ export default function Filters({ filters, setFilters }) {
             value={filters.category}
             onChange={(event) => handleSelectionChange(event, "category")}
             name="category"
-            icon="/food.svg"
+            icon="/wheel.svg"
           />
 
           <FilterSelect
