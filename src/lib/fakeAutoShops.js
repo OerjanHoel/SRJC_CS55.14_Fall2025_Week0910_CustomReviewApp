@@ -11,8 +11,6 @@ export async function generateFakeAutoShopsAndReviews() {
   const autoShopsToAdd = 6;
   const data = [];
   
-  // Create an array of available image numbers (1-13) to avoid duplicates
-  const availableImages = Array.from({ length: 13 }, (_, i) => i + 1);
 
   for (let i = 0; i < autoShopsToAdd; i++) {
     const autoShopTimestamp = Timestamp.fromDate(getRandomDateBefore());
@@ -65,9 +63,7 @@ export async function generateFakeAutoShopsAndReviews() {
         0
       ),
       price: randomNumberBetween(1, 4),
-      // photo: `/images/${randomNumberBetween(1, 13)}.jpg`, // Old way - allows duplicates
-      // Randomly select from available images without duplicates
-      photo: `/images/${availableImages.splice(Math.floor(Math.random() * availableImages.length), 1)[0]}.jpg`,
+      photo: `/images/${randomNumberBetween(1, 13)}.jpg`, 
       timestamp: autoShopTimestamp,
     };
 
