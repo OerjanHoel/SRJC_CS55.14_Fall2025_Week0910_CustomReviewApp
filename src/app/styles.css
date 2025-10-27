@@ -206,6 +206,7 @@ article {
   margin: 0 auto;
   background-color: #283545;
   padding: 20px 40px;
+  border-radius: 0 0 10px 10px;
 }
 
 article {
@@ -222,6 +223,7 @@ article {
   & li {
     background: #202130;
     max-width: 300px;
+    border-radius: 0 0 15px 15px;
   }
 
   & a {
@@ -510,8 +512,6 @@ a {
   & img {
     height: 2.5rem;
     max-width: 100%;
-    position: relative;
-    top: 15px;
   }
 
   & form div {
